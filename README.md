@@ -1,5 +1,5 @@
 ## Description 
-This is simple book store website using Java EE as REST API (backend), Angular (frontend), H2 (relational db), Intellij IDEA (Editor), Maven (Building tool), Wildfly (Application Server), JUnit & Arquillian (Testing Framworks).
+This is simple book store website using Java EE as REST API (backend), Angular (frontend), H2 (relational db), Intellij IDEA (Editor), Maven (Building tool), Wildfly 10.1.0 (Application Server), JUnit & Arquillian (Testing Framworks), Swagger.
 
 ## Structure 
 
