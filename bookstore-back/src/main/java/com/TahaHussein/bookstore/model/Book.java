@@ -12,10 +12,12 @@ import java.util.Date;
 
 /**
  * @author Taha Hussein
+ *         taha.hussein.12.6.95@gmail.com
+ *         --
  */
 
 @Entity
-@ApiModel(description = "Book resource representation" )
+@ApiModel( description = "Book resource representation" )
 public class Book {
 
     // ======================================
@@ -158,8 +160,8 @@ public class Book {
         return imageURL;
     }
 
-    public void setImageURL(String imagURL) {
-        this.imageURL = imagURL;
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
     }
 
     // ======================================
@@ -169,13 +171,13 @@ public class Book {
     @Override
     public String toString() {
         return "Book{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", description='" + description + '\'' +
-                ", unitCost=" + unitCost +
-                ", isbn='" + isbn + '\'' +
-                ", publicationDate=" + publicationDate +
-                ", language=" + language +
-                '}';
+            "id=" + id +
+            ", title='" + title + '\'' +
+            ", description='" + description + '\'' +
+            ", unitCost=" + unitCost +
+            ", isbn='" + isbn + '\'' +
+            ", publicationDate=" + publicationDate +
+            ", language=" + language +
+            '}';
     }
 }

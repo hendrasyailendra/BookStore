@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Book } from '../service/model/Book';
-import {BookService} from '../service';
+import { Book } from '../service/model/book';
+import 'rxjs/Rx';
+import { BookService } from '../service/api/book.service';
 
 @Component({
   selector: 'bs-book-list',
@@ -9,15 +10,14 @@ import {BookService} from '../service';
 })
 export class BookListComponent implements OnInit {
 
-  private nbBooks: number;
-  private books: Book[];
+    private nbBooks: number;
+    private books: Book[];
 
-  constructor(private bookService: BookService) {
-  }
+    constructor(private bookService: BookService) {
+    }
 
-  ngOnInit() {
-    this.bookService.countBooks().subscribe(nbBooks => this.nbBooks = nbBooks);
-    this.bookService.getBooks().subscribe(books => this.books = books);
-  }
-
+    ngOnInit() {
+        this.bookService.countBooks().subscribe(nbBooks => this.nbBooks = nbBooks);
+        this.bookService.getBooks().subscribe(books => this.books = books);
+    }
 }

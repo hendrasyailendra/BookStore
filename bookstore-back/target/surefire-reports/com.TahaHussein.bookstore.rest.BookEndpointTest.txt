@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.TahaHussein.bookstore.rest.BookEndpointTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE! - in com.TahaHussein.bookstore.rest.BookEndpointTest
+com.TahaHussein.bookstore.rest.BookEndpointTest  Time elapsed: 0.001 sec  <<< ERROR!
+org.jboss.arquillian.container.spi.client.container.DeploymentException: Cannot deploy: 8a72dd79-84d9-4969-8e94-b64f9d7ee537.war
+Caused by: java.net.ConnectException: Connection refused
+

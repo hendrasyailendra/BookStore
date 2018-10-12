@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import 'rxjs/add/observable/of';
-import 'rxjs/add/operator/map';
-import {BookService} from '../service';
-import { Book } from '../service/model/Book';
+import { Book } from '../service/model/book';
+import 'rxjs/Rx';
+import { BookService } from '../service/api/book.service';
 
 @Component({
   selector: 'bs-book-detail',
@@ -12,17 +11,7 @@ import { Book } from '../service/model/Book';
 })
 export class BookDetailComponent implements OnInit {
 
-  private book: Book = new class implements Book {
-    description: string;
-    id: number;
-    imageURL: string;
-    isbn: string;
-    language: Book.LanguageEnum;
-    nbOfPages: number;
-    publicationDate: Date;
-    title: string;
-    unitCost: number;
-  }();
+  private book: Book = new Book();
 
   constructor(private router: Router, private route: ActivatedRoute, private bookService: BookService) { }
 

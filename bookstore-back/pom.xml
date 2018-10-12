@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <groupId>com.TahaHussein.practise-javaee</groupId>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.pluralsight.javaee-getting-started.javaee-getting-started-m15</groupId>
     <artifactId>bookstore-back</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
-
-    <name>bookstore-back</name>
+    <name>Getting Started :: javaee-getting-started-m15 :: Invoking the REST Service :: Back</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -117,22 +116,23 @@
                     <apiSources>
                         <apiSource>
                             <springmvc>false</springmvc>
-                            <locations>com.TahaHussein.bookstore.rest</locations>
+                            <locations>com.pluralsight.bookstore.rest</locations>
                             <schemes>http,https</schemes>
                             <host>localhost:8080</host>
-                            <basePath>/bookstore-back-1.0/api</basePath>
+                            <basePath>/bookstore-back/api</basePath>
                             <outputFormats>yaml,json</outputFormats>
                             <info>
                                 <title>BookStore APIs</title>
                                 <version>1.0.0</version>
                                 <description>BookStore APIs exposed from a Java EE back-end to an Angular front-end</description>
                                 <contact>
-                                    <email>taha.hussein.12.6.95@gmail.com</email>
-                                    <name>Taha Hussein</name>
+                                    <email>antonio.goncalves@gmail.com</email>
+                                    <name>Antonio Goncalves</name>
+                                    <url>https://app.pluralsight.com/library/search?q=Antonio+Goncalves</url>
                                 </contact>
                             </info>
                             <swaggerDirectory>${basedir}/src/main/webapp</swaggerDirectory>
-                            <attachSwaggerArtifact>true</attachSwaggerArtifact>
+                        <attachSwaggerArtifact>true</attachSwaggerArtifact>
                         </apiSource>
                     </apiSources>
                 </configuration>
