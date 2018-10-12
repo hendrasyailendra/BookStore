@@ -1,0 +1,28 @@
+Intial steps in Java EE project with best practise:-
+Bootstrapping your application
+1- Running this command : 
+ mvn -DarchetypeGroupId=org.codehaus.mojo.archetypes -DarchetypeArtifactId=webapp-javaee7 -DarchetypeVersion=1.1 -DgroupId=com.pluralsight.javaee-getting-started -DartifactId=bookstore-back -Dversion=1.0 -Darchetype.interactive=false --batch-mode -Dpackage=com.pluralsight.bookstore archetype:generate
+
+Defining domain model
+2- Create JPA and then create persistence.xml file in the back of your project (bookStore-back) in src/main/resources apend the last path when creating persistence.xml note you may choose Hibernate using your editor
+
+3- Create in the back of your project a persistence Unit : is a logical grouping of user defined persistable classes (entity classes, embeddable classes and mapped superclasses) with related settings. Defining a persistence unit is optional when using ObjectDB, but required by JPA  
+https://www.objectdb.com/java/jpa/entity/persistence-unit
+
+4- Hover on persistence Unity and create new Entity and desfine package like com.TahaHussein.bookStore.model 
+
+5- Implement your models (variables, setters & getters, toString function and Annotations)
+
+6- Into persistence.xml in the persistence Unit tag define the default propertises of JPA
+
+<persistence-unit name="bookStorePU">
+	<properties>
+	    <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+	    <property name="javax.persistence.schema-generation.scripts.action" value="drop-and-create"/>
+	    <property name="javax.persistence.schema-generation.scripts.create-target" value="bookStoreCreate.ddl"/>
+	    <property name="javax.persistence.schema-generation.scripts.drop-target" value="bookStoreDrop.ddl"/>
+	</properties>
+</persistence-unit>
+
+Adding Transactional repository
+7- 

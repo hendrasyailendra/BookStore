@@ -1,0 +1,8 @@
+com/TahaHussein/bookstore/rest/BookEndpoint.class
+com/TahaHussein/bookstore/repository/BookRepository.class
+com/TahaHussein/bookstore/rest/JAXRSConfiguration.class
+com/TahaHussein/bookstore/util/IsbnGenerator.class
+com/TahaHussein/bookstore/model/Language.class
+com/TahaHussein/bookstore/util/NumberGenerator.class
+com/TahaHussein/bookstore/model/Book.class
+com/TahaHussein/bookstore/util/TextUtil.class
